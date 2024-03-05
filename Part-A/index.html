@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Car Website</title>
+
+    
+    <style>
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        
+        h1 {
+            font-style: italic;
+            text-shadow: 2px 2px 4px #888;
+            margin-bottom: 10px;
+        }
+
+       
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #333;
+            margin-top: 10px;
+        }
+
+       
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 10px solid cyan;
+            box-shadow: 4px 4px 8px #888;
+        }
+
+        
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+            width: 40%; 
+        }
+
+    
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px #333;
+        }
+
+        
+        ul {
+            text-align: right;
+        }
+
+        
+        ol {
+            text-align: left;
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: greenyellow;
+            font-weight: bold;
+            font-size: 20px;
+            text-shadow: 1px 1px 2px #333;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+            text-shadow: 1px 1px 2px #333;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <header>
+        <h1>Car Website</h1>
+    </header>
+
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://www.porsche.com/middle-east/_india_/">Models</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    
+    <section>
+        <div>
+            
+            <h2>Featured Car Models</h2>
+            
+            
+            <button onclick="changeBorderColor()">See Details</button>
+            
+          
+            <img src="porsche.jpg" alt="Car Model" id="carImage">
+        </div>
+
+        
+        <ul>
+            <li>Model A - Luxury Edition</li>
+            <li>Model B - Sporty Variant</li>
+            <li>Model C - Hybrid Innovation</li>
+        </ul>
+
+        
+        <ol>
+            <li>Exclusive Model X - Limited Availability</li>
+            <li>Limited Edition Y - Collector's Choice</li>
+            <li>Premium Model Z - High-End Performance</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Made By RAJESH_N</p>
+    </footer>
+
+    <!-- JavaScript function to change the border color of the image -->
+    <script>
+        function changeBorderColor() {
+            const carImage = document.getElementById('carImage');
+            carImage.style.border = "10px solid #4CAF50"; // Change border color to green
+        }
+    </script>
+
+</body>
+
+</html>
